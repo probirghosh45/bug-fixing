@@ -11,7 +11,7 @@ function submitIssue(e) {
   const issue = { id, description, severity, assignedTo, status };
   let issues = [];
   if (localStorage.getItem('issues')){
-    issues = JSON.parse(localStorage.getItem('issues'));
+    issues = JSON.parse(localStorage.getItem('issues')); 
   }
   issues.push(issue);
   localStorage.setItem('issues', JSON.stringify(issues));
